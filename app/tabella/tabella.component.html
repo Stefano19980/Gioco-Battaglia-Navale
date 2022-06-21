@@ -1,0 +1,29 @@
+<div class="col-xs-12"  *ngIf="getShow()">
+<table class="table table-bordered">
+    <thead>
+      <tr class="colonna">
+        <div></div>  
+        <th *ngFor="let col of getColArray()">
+          {{col}}        
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of getRowArray()">
+        <div class="numeri">
+          {{row}}
+        </div>
+        <td *ngFor="let col of getColArray()">
+          <app-cella [nomeCella]="col + row" (onValoreEmesso)="getTrovaNave(col, row)"></app-cella>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="tentativi">
+    <h2> TENTATIVI {{ getTentativi() }} / 30</h2>
+</div>
+</div>
+<button type="button" class="button" (click)="getMostraElemento()">GIOCA</button>
+
+<app-esito-partita></app-esito-partita>
+   

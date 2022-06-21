@@ -1,0 +1,12 @@
+<div class="esito" *ngIf="getVittoria()">
+    <div class="vittoria">
+         <h3 class="vittoria">HAI VINTO!</h3>
+         <button class="btn btn-success"  (click)="getReset()">RIGIOCA!</button>
+    </div>
+  </div>
+  
+  <div class="esito" *ngIf="getSconfitta()">
+    <div class="sconfitta">
+        <h3 class="sconfitta">HAI PERSO!</h3>
+        <button class="btn btn-danger" (click)="getReset()">RIPROVA</button>
+    </div>

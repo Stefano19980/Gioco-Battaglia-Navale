@@ -1,0 +1,65 @@
+table {
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+    background-color: rgb(102, 102, 102);
+    border: none;
+    margin-top: 5%;
+    margin-left: 27.5%;
+}
+
+.colonna th {
+    border: none;
+    text-align: center;
+}
+
+
+.numeri {
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 155px;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+}
+
+p {
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 55%;
+    color: rgb(0, 0, 0);
+}
+
+.table td:hover {
+    background-color: white;
+}
+
+
+
+
+button {
+    width: 20%;
+    margin: 2pc 38.5pc 2pc 38.5pc;
+    text-align: center;
+    background: transparent;
+    color: white;
+    border-radius: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 15px 15px;
+    display: inline-block;
+    letter-spacing:3px;
+    border: none;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+h3 {
+    text-align: center;
+}
